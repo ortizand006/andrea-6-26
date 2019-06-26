@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cat_calc2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nW-yh-HCW">
+                                <rect key="frame" x="152.5" y="108" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Cat Age Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJ4-VE-vVh">
+                                <rect key="frame" x="116" y="163" width="182" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ysy-Hs-wlg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnn-t9-X0j">
+                                <rect key="frame" x="116" y="303" width="182" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="e1O-4c-ee8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ry6-Lk-hDG">
+                                <rect key="frame" x="96" y="243" width="219" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="K8h-hp-WDp"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="8" id="Ku0-8P-gEi"/>
+                                    <constraint firstAttribute="height" constant="30" id="RKW-GD-ift"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29" id="qUt-bP-xeb"/>
+                                </constraints>
+                                <state key="normal" title="Calculate your cat's real age!"/>
+                                <connections>
+                                    <action selector="calculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vvv-HW-53Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LJ4-VE-vVh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="2I6-XB-wec"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="7jW-g3-YQE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LJ4-VE-vVh" secondAttribute="trailing" constant="116" id="A6J-Tk-c3w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ry6-Lk-hDG" secondAttribute="trailing" constant="95" id="DK7-GX-Hfz"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="top" secondItem="LJ4-VE-vVh" secondAttribute="bottom" constant="8" id="JTO-xn-VbL"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="LVp-cb-C8B"/>
+                            <constraint firstItem="Gnn-t9-X0j" firstAttribute="top" secondItem="Ry6-Lk-hDG" secondAttribute="bottom" constant="27" id="LiQ-UK-88e"/>
+                            <constraint firstItem="LJ4-VE-vVh" firstAttribute="top" secondItem="5nW-yh-HCW" secondAttribute="bottom" constant="34" id="MvP-Y1-0tP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ry6-Lk-hDG" secondAttribute="trailing" constant="156" id="NmJ-59-z31"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="top" secondItem="LJ4-VE-vVh" secondAttribute="bottom" constant="30" id="S69-ZH-EYk"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="85" id="Z1k-mM-zcI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ry6-Lk-hDG" secondAttribute="trailing" constant="97" id="ZCO-Rc-o9H"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="bfz-M5-5lP"/>
+                            <constraint firstItem="5nW-yh-HCW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="eMM-6I-7VT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ry6-Lk-hDG" secondAttribute="trailing" constant="86" id="fwl-Hl-fnK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ry6-Lk-hDG" secondAttribute="trailing" constant="92" id="h68-0i-DPw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ry6-Lk-hDG" secondAttribute="trailing" constant="99" id="hkL-R0-f8l"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="top" secondItem="LJ4-VE-vVh" secondAttribute="bottom" constant="8" id="nTW-or-VgY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gnn-t9-X0j" secondAttribute="trailing" constant="116" id="o5q-RK-udD"/>
+                            <constraint firstItem="5nW-yh-HCW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6q-5O-Sh8"/>
+                            <constraint firstItem="Gnn-t9-X0j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="qL9-Jq-ZRe"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="scV-Kv-vXs"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="top" secondItem="LJ4-VE-vVh" secondAttribute="bottom" constant="38" id="u8Q-Xy-9YK"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="96" id="wor-b6-sdA"/>
+                            <constraint firstItem="Ry6-Lk-hDG" firstAttribute="top" secondItem="LJ4-VE-vVh" secondAttribute="bottom" constant="50" id="zB4-Sd-YgF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="results" destination="Gnn-t9-X0j" id="oGw-lU-115"/>
+                        <outlet property="userInput" destination="LJ4-VE-vVh" id="EJH-so-5ps"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="131.25"/>
+        </scene>
+    </scenes>
+</document>
